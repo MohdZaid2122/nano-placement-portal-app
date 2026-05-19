@@ -18,4 +18,4 @@ This is a web-based Placement Portal built using Flask and SQLite.
 - HTML, CSS, Bootstrap
 
 ## Status
-Project under development for MAD-1 course.
+Project completed.
