@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>My Applications</h2>
+<h3>Welcome, {{ student.name }} </h3>
+
+
+<h4>My Applications</h4>
+
+<table class="table table-bordered">
+<tr>
+    <th>Drive ID</th>
+    <th>Status</th>
+</tr>
+
+{% for app in applications %}
+<tr>
+    <td>{{ app.drive_id }}</td>
+    <td>{{ app.status }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<table class="table table-bordered">
+
+<a href="/drives" class="btn btn-primary mb-3"> View Available Drives</a>
+<tr>
+<th>Drive ID</th>
+<th>Status</th>
+</tr>
+
+
+
+{% for app in applications %}
+
+<tr>
+<td>{{app.drive_id}}</td>
+<td>{{app.status}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock %}

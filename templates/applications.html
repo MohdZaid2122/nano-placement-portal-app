@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Applications</h2>
+
+<div class="card p-3 shadow">
+
+<table class="table table-bordered table-striped">
+
+<tr>
+<th>ID</th>
+<th>Student ID</th>
+<th>Drive ID</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+{% for app in applications %}
+
+<tr>
+<td>{{app.id}}</td>
+<td>{{app.student_id}}</td>
+<td>{{app.drive_id}}</td>
+<td>{{app.status}}</td>
+
+<td>
+<a href="/application/update/{{app.id}}/Shortlisted" class="btn btn-warning btn-sm">Shortlist</a>
+
+<a href="/application/update/{{app.id}}/Selected" class="btn btn-success btn-sm">Select</a>
+
+<a href="/application/update/{{app.id}}/Rejected" class="btn btn-danger btn-sm">Reject</a>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+{% endblock %}

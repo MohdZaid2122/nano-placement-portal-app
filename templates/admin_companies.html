@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Registered Companies</h2>
+
+<div class="card p-3 shadow">
+
+<table class="table table-bordered table-striped">
+
+<tr>
+<th>ID</th>
+<th>Company Name</th>
+<th>HR Contact</th>
+<th>Website</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+
+{% for company in companies %}
+
+<tr>
+<td>{{company.id}}</td>
+<td>{{company.company_name}}</td>
+<td>{{company.hr_contact}}</td>
+<td>{{company.website}}</td>
+<td>{{company.approval_status}}</td>
+
+<td>
+    {% if company.approval_status == "Approved" %}
+        <span class="text-success">Approved</span>
+    {% else %}
+        <span class="text-danger">Pending</span>
+    {% endif %}
+</td>
+
+<td>
+<a href="/admin/approve/{{company.id}}" class="btn btn-success btn-sm">
+Approve
+</a>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+{% endblock %}

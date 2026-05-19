@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Admin Dashboard</h2>
+
+<div class="row text-center mt-4">
+
+    <div class="col">
+        <h4>Students: {{students}}</h4>
+        <a href="/admin/students" class="btn btn-primary">View</a>
+    </div>
+
+    <div class="col">
+        <h4>Companies: {{companies}}</h4>
+        <a href="/admin/companies" class="btn btn-success">View</a>
+    </div>
+
+    <div class="col">
+        <h4>Drives: {{drives}}</h4>
+        <a href="/drives" class="btn btn-warning">View</a>
+    </div>
+
+    <div class="col">
+        <h4>Applications: {{applications}}</h4>
+        <a href="/applications" class="btn btn-danger">View</a>
+    </div>
+
+</div>
+
+</div>
+
+{% endblock %}

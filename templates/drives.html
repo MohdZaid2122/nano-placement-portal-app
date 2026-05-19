@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Available Placement Drives</h2>
+
+<div class="card p-3 shadow">
+
+<table class="table table-bordered table-striped">
+    <!--h2 class="text-center mt-4">Available Placement Drives</h2-->
+<p class="text-center">Apply to jobs below</p>
+
+<tr>
+<th>ID</th>
+<th>Job Title</th>
+<th>Description</th>
+<th>Eligibility</th>
+<th>Deadline</th>
+<th>Action</th>
+</tr>
+
+{% for drive in drives %}
+
+<tr>
+<td>{{drive.id}}</td>
+<td>{{drive.job_title}}</td>
+<td>{{drive.description}}</td>
+<td>{{drive.eligibility}}</td>
+<td>{{drive.deadline}}</td>
+
+<td>
+<a href="/apply/{{drive.id}}" class="btn btn-success btn-sm">
+<a href="/apply/{{drive.job_title}}" class="btn btn-success btn-sm">   
+Apply
+</a>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+{% endblock %}

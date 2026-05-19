@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    body {
+        background-color: #f5f7fb;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #4e73df, #1cc88a);
+        color: white;
+        border-radius: 15px;
+    }
+
+    .btn-custom {
+        border-radius: 25px;
+    }
+
+    .card {
+        border: none;
+        border-radius: 12px;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        transition: 0.2s;
+    }
+</style>
+
+<!-- HERO -->
+<div class="p-4 mb-4 hero shadow-sm">
+    <div class="container">
+
+        <h2 class="fw-bold">Nano Placement Portal</h2>
+
+        <p>
+            A simple platform to connect students with companies and manage placements smoothly.
+        </p>
+
+        <div class="mt-3">
+            <a href="/login_student" class="btn btn-light btn-custom me-2">🔐 Login</a>
+            <a href="/student/register" class="btn btn-warning btn-custom me-2">🎓 Student</a>
+            <a href="/company/register" class="btn btn-dark btn-custom">🏢 Company</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- FEATURES -->
+<div class="row text-center">
+
+    <div class="col-md-4">
+        <div class="card p-3 shadow-sm">
+            <h5>⚙️ Admin</h5>
+            <p class="text-muted small">
+                Manage students, companies, and placement activities.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-3 shadow-sm">
+            <h5>🏢 Company</h5>
+            <p class="text-muted small">
+                Post job openings and review student applications.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card p-3 shadow-sm">
+            <h5>🎓 Student</h5>
+            <p class="text-muted small">
+                Explore jobs, apply easily, and track your status.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
