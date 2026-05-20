@@ -1,12 +1,12 @@
-# 🚀 Nano Career Portal – AI-Powered Placement Management System
+#  Nano Career Portal – AI-Powered Placement Management System
 
 ## 📹 Demo Video
-🎥 **Project Demonstration:**  
+  **Project Demonstration:**  
 https://drive.google.com/file/d/1PshRweBOT7J3H2CLYBKnM1a9jD6VNBjH/view?usp=drive_link
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **Nano Career Portal** is an **AI-inspired Placement Management System** developed to streamline recruitment workflows for students, companies, and administrators.
 
@@ -16,7 +16,7 @@ The system is designed with a scalable architecture and recruiter-friendly workf
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 ### 👨‍🎓 Student Module
 - Secure Student Registration & Login
@@ -70,7 +70,7 @@ The system is designed with a scalable architecture and recruiter-friendly workf
 
 ---
 
-## 🧠 Core Concepts Implemented
+##  Core Concepts Implemented
 - Authentication & Session Management
 - CRUD Operations
 - Database Relationships
